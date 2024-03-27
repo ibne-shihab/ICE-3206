@@ -2,10 +2,11 @@ clc;
 clear ;
 close all;
 % Number of bits
-N = 10;
+N = 8;
 
 % Generate random binary data
-binary_data = randi([0, 1], 1, N);
+binary_data = [0 1 1 0 1 0 0 1];
+%binary_data = randi([0, 1], 1, N);
 
 % Binary to Manchester Conversion
 manchester_data = [];

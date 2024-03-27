@@ -2,9 +2,9 @@ clc;
 clear ;
 close all;
 % Number of bits
-N = 10;
+N = 8;
 % Generate random binary data
-binary_data = randi([0, 1], 1, N);
+binary_data = [0 1 1 0 1 0 0 1];
 % RZ Pulse Shaping
 i = 1;
 a = 0; % Initial value for the first half cycle

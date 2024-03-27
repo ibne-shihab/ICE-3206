@@ -2,9 +2,10 @@ clc;
 clear;
 close all;
 % Number of bits
-N = 20;
+N = 8;
 % Generate random binary data
-binary_data = randi([0, 1], 1, N);
+binary_data = [0 1 1 0 1 0 0 1];
+%binary_data = randi([0, 1], 1, N);
 % Mapping Function
 polar_data = 2 * binary_data - 1;
 % Time vector setup

@@ -2,11 +2,12 @@ clc;
 clear;
 close all;
 % Parameters
-N = 20;  % Number of bits
+N = 8;
+% Generate random binary data
+binary_data = [0 1 1 0 1 0 0 1];
+%binary_data = randi([0, 1], 1, N);
 bit_duration = 1;  % Duration of each bit (in seconds)
 sampling_rate = 100; % Sampling rate (samples per second)
-% Generate random binary data
-binary_data = randi([0, 1], 1, N);
 % Create time vector
 t = 0:1/sampling_rate:N*bit_duration - 1/sampling_rate;
 % Generate Unipolar NRZ signal

@@ -1,7 +1,9 @@
 clc;
 clear; 
 close all;
-x=[1 0 1 1 1 0 1 0 1];
+% Generate random binary data
+x = [0 1 1 0 1 0 0 1];
+%x = randi([0, 1], 1, 8);
 bp=0.000001;
 disp('Binary Information at transmitter');
 disp(x);

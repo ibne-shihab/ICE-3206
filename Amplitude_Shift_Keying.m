@@ -2,6 +2,7 @@ clc;
 clear;
 close all;
 x = [1 0 1 0 1 0 1 0 1];
+%x = randi([0, 1], 1, 8);
 bp = 0.000001;
 % Session: 2018-2019
 disp('Binary Information at transmitter');

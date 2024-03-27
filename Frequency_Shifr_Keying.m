@@ -2,7 +2,8 @@ clc;
 clear ;
 close all;
 % Binary information to be transmitted
-x = [1 1 0 1 0 1];
+x = [0 1 1 0 1 0 0 1];
+%x = randi([0, 1], 1, 8);
 bp = 0.000001; % Bit period
 disp('Binary information at transmitter');
 disp(x);
